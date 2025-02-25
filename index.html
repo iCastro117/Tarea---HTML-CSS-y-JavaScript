@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz con Header</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+    <script src="js/contenido.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/Favicon.png" alt="CoderPro Logo">
+        </div>
+        <nav>
+            <a href="portada.html" class="nav-link">Portada</a>
+            <a href="index.html" class="nav-link">Ejercicio</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-3 sidebar">
+                <div class="nav flex-column">
+                    <div class="nav-item">
+                        <div class="nav flex-column">
+
+                            <button class="nav-button" onclick="nuevoTitulo()">Título
+                                <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+                                <animated-icons
+                                src="https://animatedicons.co/get-icon?name=plus&style=minimalistic&token=3a3309ff-41ae-42ce-97d0-5767a4421b43"
+                                trigger="click"
+                                attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+                                height="50"
+                                width="50"
+                                ></animated-icons>
+                            </button>
+
+                            <button class="nav-button" onclick="nuevoParrafo()">Párrafo
+                                <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+<animated-icons
+src="https://animatedicons.co/get-icon?name=plus&style=minimalistic&token=3a3309ff-41ae-42ce-97d0-5767a4421b43"
+trigger="click"
+attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+height="50"
+width="50"
+></animated-icons>
+                            </button>
+
+                            <button class="nav-button" onclick="nuevaImagen()">Imagen
+                                <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+<animated-icons
+src="https://animatedicons.co/get-icon?name=plus&style=minimalistic&token=3a3309ff-41ae-42ce-97d0-5767a4421b43"
+  trigger="click"
+  attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+  height="50"
+  width="50"
+></animated-icons>
+                            </button>
+
+                            <button class="nav-button" onclick="nuevoEnlace()">Enlace
+                                <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+<animated-icons
+src="https://animatedicons.co/get-icon?name=plus&style=minimalistic&token=3a3309ff-41ae-42ce-97d0-5767a4421b43"
+trigger="click"
+attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+height="50"
+width="50"
+></animated-icons>
+                            </button>
+
+                            <button class="nav-button" onclick="imprimir()">Imprimir
+                                <script src="https://animatedicons.co/scripts/embed-animated-icons.js"></script>
+<animated-icons
+  src="https://animatedicons.co/get-icon?name=plus&style=minimalistic&token=3a3309ff-41ae-42ce-97d0-5767a4421b43"
+  trigger="click"
+  attributes='{"variationThumbColour":"#536DFE","variationName":"Two Tone","variationNumber":2,"numberOfGroups":2,"backgroundIsGroup":false,"strokeWidth":1,"defaultColours":{"group-1":"#000000","group-2":"#536DFE","background":"#FFFFFF"}}'
+  height="50"
+  width="50"
+></animated-icons>
+                            </button>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <h1>Contenido de Botones</h1>
+
+            <h2>Interactuca con los botones de la izuqierda para ver el contenido</h2>
+            <div class="extraSub-box">
+                <!-- Aquí se agregarán las imágenes -->
+
+            </div>
+            <div class="contenido-box">
+                <div class="row">
+                    <textarea id="texto" rows="8"></textarea>
+                </div>
+                <div class="row">
+                    <input type="file" id="imagen">
+                </div>
+                <div class="card" id="contenido"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,244 @@
+/* Reset básico */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F0F4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background: linear-gradient(270deg, #e2d9d9, #ffffff, #e2d9d9);
+    background-size: 300% 300%;
+    animation: gradientMove 5s infinite linear;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    border-radius: 16px;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.logo img {
+    width: 60px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+    /* Separación entre enlaces */
+    margin-right: 30px;
+    /* Margen derecho solicitado */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-link:hover {
+    transform: scale(1.2);
+    color: black;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 15%;
+    height: 125%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    position: absolute;
+    left: 15px;
+    top: 110px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.icon-button:hover {
+    transform: scale(1.1);
+    background-color: #e2d9d9;
+}
+
+.nav-button {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* Espacio entre cada recuadro */
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-button:hover {
+    margin-bottom: 20px;
+    /* Espacio entre cada recuadro */
+    transform: scale(1.1);
+    background-color: #e2d9d9;
+}
+
+.extra-box {
+    position: relative;
+    /* Se mantiene como contenedor relativo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 1300px;
+    min-width: 1090px;
+    top: -10px;
+    /* Mínimo de 300px desde arriba */
+    /* Se agrega un mínimo de ancho */
+    left: -8%;
+    height: 780px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.extra-box h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.extra-box h2 {
+    position: relative;
+    top: 80px;
+    /* Ajusta según necesites */
+    text-align: center;
+    font-size: 16px;
+    /* Ajusta el tamaño según prefieras */
+}
+
+.contenido-box {
+    position: relative;
+    /* Cambiado de absolute a relative */
+    top: 140px;
+    /* Ajustar la distancia desde el h1 */
+    left: 200px;
+    width: 90%;
+    max-width: 1200px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* Evita que la imagen altere la estructura */
+
+.extraSub-box img {
+    max-width: 300px;
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    display: block;
+    position: absolute;
+    margin: 40px auto;
+    /* La mantiene flotando en el mismo lugar */
+    top: 10%;
+    left: 35%;
+    border-radius: 16px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 99%;
+    height: 800px;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 16px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#contenido {
+    min-height: 20px;
+    /* Ajusta este valor según necesites */
+    overflow: auto;
+    /* Permite desplazamiento si el contenido excede */
+}
+
+.row {
+    margin-left: 300px;
+    /* Mueve todo el contenido más a la derecha */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* Contenido principal */
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+#contenido {
+    margin-left: 80px;
+    /* Mueve todo el contenido 80px hacia la derecha */
+}
+
+#contenido img {
+    width: 100%;
+    /* Ajusta el tamaño */
+    height: auto;
+    margin-top: 30px;
+    margin-left: 30px;
+    /* Desplaza la imagen hacia la derecha */
+    display: block;
+    /* Asegura que no se comporte como un inline-element */
+    position: relative;
+    /* Permite moverla sin afectar otros elementos */
+}
